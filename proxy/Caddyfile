@@ -1,0 +1,7 @@
+{
+	email harbottle@room3d3.com
+}
+
+https://webmushra.uksouth.azurecontainer.io {
+	reverse_proxy localhost:80
+}
