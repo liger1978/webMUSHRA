@@ -1,4 +1,6 @@
-testname: Deep Neural Network based Music Source Separation - Multiple Stimuli with Hidden Reference and Anchor Test
+testname: >-
+  Deep Neural Network based Music Source Separation -
+  Multiple Stimuli with Hidden Reference and Anchor Test
 testId: deep
 bufferSize: 2048
 stopOnErrors: true
@@ -6,152 +8,223 @@ showButtonPreviousPage: true
 remoteService: service/write.php
 
 pages:
-    - type: generic
-      id: first_page
-      name: webMUSHRA
-      content: Deep Neural Network based Music Source Separation - Multiple Stimuli with Hidden Reference and Anchor Test
-    - type: consent
-      id: consent_page
-      name: Consent
-      mustConsent: true
-      content: <p>You are participating in a listening test. For this, we want to store the answers you give to the following questions.<br>Do you give consent for this?</p>
-    - type: mushra
-      id: training
-      name: webMUSHRA Training Page
-      content: This training shows how to use our user interface. Please perform the instructions to proceed with the training session.<br/><br />In a MUSHRA listening test you are asked to rate the Basic Audio Quality (BAQ) of each condition.<br/>Basic Audio Quality is a single and global attribute that is used to judge any and all detected differences between the reference and the condition.<br /><br />Please listen and rate each piece of test audio (conditions) from 0 to 100, with 100 being judged to be identical to the reference audio and 0 being different.<br /><br />Click next once you have rated each audio sample.
-      showWaveform: true
-      enableLooping: true 
-      reference: configs/resources/audio/mono_ref.wav
-      createAnchor35: true
-      createAnchor70: true
-      stimuli:
-          C1: configs/resources/audio/mono_c1.wav
-          C2: configs/resources/audio/mono_c2.wav
-          C3: configs/resources/audio/mono_c3.wav
-    - type: mushra
-      id: test_a
-      name: Audio Stimuli Testing A
-      content: Please listen and rate each piece of test audio (conditions) from 0 to 100, with 100 being judged to be identical to the reference audio and 0 being different.<br /><br />Click next once you have rated each audio sample.
-      showWaveform: true
-      enableLooping: true 
-      reference: configs/resources/audio/a1_folk_solo_ref_drum.wav
-      createAnchor35: true
-      createAnchor70: true
-      stimuli:
-          C1: configs/resources/audio/a2_folk_mix_drums_demucs4_ht_drums.wav
-          C2: configs/resources/audio/a2_folk_mix_drums_lalalai.wav
-          C3: configs/resources/audio/a2_folk_mix_drums_ripx.wav
-          C4: configs/resources/audio/a2_folk_mix_drums_rx.wav
-          C5: configs/resources/audio/a3_folk_solo_ref_drums_anchor_standard_low_3500hz.wav
-    - type: mushra
-      id: test_b
-      name: Audio Stimuli Testing B
-      content: Please listen and rate each piece of test audio (conditions) from 0 to 100, with 100 being judged to be identical to the reference audio and 0 being different.<br /><br />Click next once you have rated each audio sample.
-      showWaveform: true
-      enableLooping: true 
-      reference: configs/resources/audio/b1_folk_solo_ref_gtr.wav
-      createAnchor35: true
-      createAnchor70: true
-      stimuli:
-          C1: configs/resources/audio/b2_folk_mix_gtr_demucs4_ht_other.wav
-          C2: configs/resources/audio/b2_folk_mix_gtr_lalalai.wav
-          C3: configs/resources/audio/b2_folk_mix_gtr_ripx.wav
-          C4: configs/resources/audio/b2_folk_mix_gtr_rx.wav
-          C5: configs/resources/audio/b3_folk_solo_ref_gtr_anchor_standard_low_3500hz.wav
-    - type: mushra
-      id: test_c
-      name: Audio Stimuli Testing C
-      content: Please listen and rate each piece of test audio (conditions) from 0 to 100, with 100 being judged to be identical to the reference audio and 0 being different.<br /><br />Click next once you have rated each audio sample.
-      showWaveform: true
-      enableLooping: true 
-      reference: configs/resources/audio/c1_rock_solo_ref_drums.wav
-      createAnchor35: true
-      createAnchor70: true
-      stimuli:
-          C1: configs/resources/audio/c2_rock_mix_drums_demucs4_ht_drums.wav
-          C2: configs/resources/audio/c2_rock_mix_drums_lalalai.wav
-          C3: configs/resources/audio/c2_rock_mix_drums_ripx.wav
-          C4: configs/resources/audio/c2_rock_mix_drums_rx.wav
-          C5: configs/resources/audio/c3_rock_solo_ref_drums_anchor_standard_low_3500hz.wav
-    - type: mushra
-      id: test_d
-      name: Audio Stimuli Testing D
-      content: Please listen and rate each piece of test audio (conditions) from 0 to 100, with 100 being judged to be identical to the reference audio and 0 being different.<br /><br />Click next once you have rated each audio sample.
-      showWaveform: true
-      enableLooping: true 
-      reference: configs/resources/audio/d1_rock_solo_ref_gtr.wav
-      createAnchor35: true
-      createAnchor70: true
-      stimuli:
-          C1: configs/resources/audio/d2_rock_mix_gtr_demucs4_ht_other.wav
-          C2: configs/resources/audio/d2_rock_mix_gtr_lalalai.wav
-          C3: configs/resources/audio/d2_rock_mix_gtr_ripx.wav
-          C4: configs/resources/audio/d2_rock_mix_gtr_rx.wav
-          C5: configs/resources/audio/d3_rock_solo_ref_gtr_anchor_standard_low_3500hz.wav
-    - type: mushra
-      id: test_e
-      name: Audio Stimuli Testing E
-      content: Please listen and rate each piece of test audio (conditions) from 0 to 100, with 100 being judged to be identical to the reference audio and 0 being different.<br /><br />Click next once you have rated each audio sample.
-      showWaveform: true
-      enableLooping: true 
-      reference: configs/resources/audio/e1_silver_moon_vox_od_solo_ref.wav
-      createAnchor35: true
-      createAnchor70: true
-      stimuli:
-          C1: configs/resources/audio/e2_silver_moon_vox_live_demucs4_ht_other.wav
-          C2: configs/resources/audio/e2_silver_moon_vox_live_lalalai.wav
-          C3: configs/resources/audio/e2_silver_moon_vox_live_ripx.wav
-          C4: configs/resources/audio/e2_silver_moon_vox_live_rx.wav
-          C5: configs/resources/audio/e3_silver_moon_vox_od_anchor_standard_low_3500hz.wav
-    - type: mushra
-      id: test_f
-      name: Audio Stimuli Testing F
-      content: Please listen and rate each piece of test audio (conditions) from 0 to 100, with 100 being judged to be identical to the reference audio and 0 being different.<br /><br />Click next once you have rated each audio sample.
-      showWaveform: true
-      enableLooping: true 
-      reference: configs/resources/audio/f1_silver_moon_bass_od_solo_ref.wav
-      createAnchor35: true
-      createAnchor70: true
-      stimuli:
-          C1: configs/resources/audio/f2_silver_moon_bass_live_demucs4_ht_bass.wav
-          C2: configs/resources/audio/f2_silver_moon_bass_live_lalalai.wav
-          C3: configs/resources/audio/f2_silver_moon_bass_live_ripx.wav
-          C4: configs/resources/audio/f2_silver_moon_bass_live_rx.wav
-          C5: configs/resources/audio/f3_silver_moon_bass_od_anchor_3500hz.wav
-    - type: mushra
-      id: test_g
-      name: Audio Stimuli Testing G
-      content: Please listen and rate each piece of test audio (conditions) from 0 to 100, with 100 being judged to be identical to the reference audio and 0 being different.<br /><br />Click next once you have rated each audio sample.
-      showWaveform: true
-      enableLooping: true 
-      reference: configs/resources/audio/g1_silver_moon_gtr_od_solo_ref.wav
-      createAnchor35: true
-      createAnchor70: true
-      stimuli:
-          C1: configs/resources/audio/g2_silver_moon_gtrs_live_demucs4_ht_other.wav
-          C2: configs/resources/audio/g2_silver_moon_gtrs_live_lalalai.wav
-          C3: configs/resources/audio/g2_silver_moon_gtrs_live_ripx.wav
-          C4: configs/resources/audio/g2_silver_moon_gtrs_live_rx1.wav
-          C5: configs/resources/audio/g3_silver_moon_gtr_od_anchor_standard_low_3500hz.wav
-    - type: finish
-      name: Thank you
-      content: Thank you for attending!
-      showResults: true
-      writeResults: true
-      questionnaire:
-          - type: number
-            label: Age
-            name: age
-            min: 0
-            max: 100
-            default: 30
-          - type: likert
-            name: role
-            label: Role
-            response:
-             - value: engineer
-               label: Trained / Professional Audio Engineer
-             - value: student
-               label: Audio Engineering Student
-             - value: nota
-               label: Neither of the above
+  - type: generic
+    id: first_page
+    name: webMUSHRA
+    content: >-
+      Deep Neural Network based Music Source Separation -
+      Multiple Stimuli with Hidden Reference and Anchor Test
+  - type: consent
+    id: consent_page
+    name: Consent
+    mustConsent: true
+    content: |-
+      <p>
+        You are participating in a listening test. For this, we want to store
+        the answers you give to the following questions.
+      </p>
+      <p>
+        Do you give consent for this?
+      </p>
+  - type: mushra
+    id: training
+    name: webMUSHRA Training Page
+    content: |-
+      <p>
+        This training shows how to use our user interface. Please perform the
+        instructions to proceed with the
+        training session.
+      </p>
+      <p>
+        In a MUSHRA listening test you are asked to rate the Basic Audio
+        Quality (BAQ) of each condition.<br/>
+        Basic Audio Quality is a single and global attribute that is used to
+        judge any and all detected differences between the reference and the
+        condition.
+      </p>
+      <p>
+        Please listen and rate each piece of test audio (conditions) from 0 to
+        100, with 100 being judged to be identical to the reference audio and
+        0 being different.
+      </p>
+      <p>
+        Click next once you have rated each audio sample.
+      </p>
+    showWaveform: true
+    enableLooping: true
+    reference: configs/resources/audio/mono_ref.wav
+    createAnchor35: true
+    createAnchor70: true
+    stimuli:
+      C1: configs/resources/audio/mono_c1.wav
+      C2: configs/resources/audio/mono_c2.wav
+      C3: configs/resources/audio/mono_c3.wav
+  - type: mushra
+    id: test_a
+    name: Audio Stimuli Testing A
+    content: |-
+      <p>
+        Please listen and rate each piece of test audio (conditions) from 0 to
+        100, with 100 being judged to be identical to the reference audio and
+        0 being different.
+      </p>
+      <p>
+        Click next once you have rated each audio sample.
+      </p>
+    showWaveform: true
+    enableLooping: true
+    reference: configs/resources/audio/a1_folk_solo_ref_drum.wav
+    stimuli:
+      C1: configs/resources/audio/a2_folk_mix_drums_demucs4_ht_drums.wav
+      C2: configs/resources/audio/a2_folk_mix_drums_lalalai.wav
+      C3: configs/resources/audio/a2_folk_mix_drums_ripx.wav
+      C4: configs/resources/audio/a2_folk_mix_drums_rx.wav
+      C5: configs/resources/audio/a3_folk_solo_ref_drums_anchor_standard_low_3500hz.wav
+  - type: mushra
+    id: test_b
+    name: Audio Stimuli Testing B
+    content: |-
+      <p>
+        Please listen and rate each piece of test audio (conditions) from 0 to
+        100, with 100 being judged to be identical to the reference audio and
+        0 being different.
+      </p>
+      <p>
+        Click next once you have rated each audio sample.
+      </p>
+    showWaveform: true
+    enableLooping: true
+    reference: configs/resources/audio/b1_folk_solo_ref_gtr.wav
+    stimuli:
+      C1: configs/resources/audio/b2_folk_mix_gtr_demucs4_ht_other.wav
+      C2: configs/resources/audio/b2_folk_mix_gtr_lalalai.wav
+      C3: configs/resources/audio/b2_folk_mix_gtr_ripx.wav
+      C4: configs/resources/audio/b2_folk_mix_gtr_rx.wav
+      C5: configs/resources/audio/b3_folk_solo_ref_gtr_anchor_standard_low_3500hz.wav
+  - type: mushra
+    id: test_c
+    name: Audio Stimuli Testing C
+    content: |-
+      <p>
+        Please listen and rate each piece of test audio (conditions) from 0 to
+        100, with 100 being judged to be identical to the reference audio and
+        0 being different.
+      </p>
+      <p>
+        Click next once you have rated each audio sample.
+      </p>
+    showWaveform: true
+    enableLooping: true
+    reference: configs/resources/audio/c1_rock_solo_ref_drums.wav
+    stimuli:
+      C1: configs/resources/audio/c2_rock_mix_drums_demucs4_ht_drums.wav
+      C2: configs/resources/audio/c2_rock_mix_drums_lalalai.wav
+      C3: configs/resources/audio/c2_rock_mix_drums_ripx.wav
+      C4: configs/resources/audio/c2_rock_mix_drums_rx.wav
+      C5: configs/resources/audio/c3_rock_solo_ref_drums_anchor_standard_low_3500hz.wav
+  - type: mushra
+    id: test_d
+    name: Audio Stimuli Testing D
+    content: |-
+      <p>
+        Please listen and rate each piece of test audio (conditions) from 0 to
+        100, with 100 being judged to be identical to the reference audio and
+        0 being different.
+      </p>
+      <p>
+        Click next once you have rated each audio sample.
+      </p>
+    showWaveform: true
+    enableLooping: true
+    reference: configs/resources/audio/d1_rock_solo_ref_gtr.wav
+    stimuli:
+      C1: configs/resources/audio/d2_rock_mix_gtr_demucs4_ht_other.wav
+      C2: configs/resources/audio/d2_rock_mix_gtr_lalalai.wav
+      C3: configs/resources/audio/d2_rock_mix_gtr_ripx.wav
+      C4: configs/resources/audio/d2_rock_mix_gtr_rx.wav
+      C5: configs/resources/audio/d3_rock_solo_ref_gtr_anchor_standard_low_3500hz.wav
+  - type: mushra
+    id: test_e
+    name: Audio Stimuli Testing E
+    content: |-
+      <p>
+        Please listen and rate each piece of test audio (conditions) from 0 to
+        100, with 100 being judged to be identical to the reference audio and
+        0 being different.
+      </p>
+      <p>
+        Click next once you have rated each audio sample.
+      </p>
+    showWaveform: true
+    enableLooping: true
+    reference: configs/resources/audio/e1_silver_moon_vox_od_solo_ref.wav
+    stimuli:
+      C1: configs/resources/audio/e2_silver_moon_vox_live_demucs4_ht_other.wav
+      C2: configs/resources/audio/e2_silver_moon_vox_live_lalalai.wav
+      C3: configs/resources/audio/e2_silver_moon_vox_live_ripx.wav
+      C4: configs/resources/audio/e2_silver_moon_vox_live_rx.wav
+      C5: configs/resources/audio/e3_silver_moon_vox_od_anchor_standard_low_3500hz.wav
+  - type: mushra
+    id: test_f
+    name: Audio Stimuli Testing F
+    content: |-
+      <p>
+        Please listen and rate each piece of test audio (conditions) from 0 to
+        100, with 100 being judged to be identical to the reference audio and
+        0 being different.
+      </p>
+      <p>
+        Click next once you have rated each audio sample.
+      </p>
+    showWaveform: true
+    enableLooping: true
+    reference: configs/resources/audio/f1_silver_moon_bass_od_solo_ref.wav
+    stimuli:
+      C1: configs/resources/audio/f2_silver_moon_bass_live_demucs4_ht_bass.wav
+      C2: configs/resources/audio/f2_silver_moon_bass_live_lalalai.wav
+      C3: configs/resources/audio/f2_silver_moon_bass_live_ripx.wav
+      C4: configs/resources/audio/f2_silver_moon_bass_live_rx.wav
+      C5: configs/resources/audio/f3_silver_moon_bass_od_anchor_3500hz.wav
+  - type: mushra
+    id: test_g
+    name: Audio Stimuli Testing G
+    content: |-
+      <p>
+        Please listen and rate each piece of test audio (conditions) from 0 to
+        100, with 100 being judged to be identical to the reference audio and
+        0 being different.
+      </p>
+      <p>
+        Click next once you have rated each audio sample.
+      </p>
+    showWaveform: true
+    enableLooping: true
+    reference: configs/resources/audio/g1_silver_moon_gtr_od_solo_ref.wav
+    stimuli:
+      C1: configs/resources/audio/g2_silver_moon_gtrs_live_demucs4_ht_other.wav
+      C2: configs/resources/audio/g2_silver_moon_gtrs_live_lalalai.wav
+      C3: configs/resources/audio/g2_silver_moon_gtrs_live_ripx.wav
+      C4: configs/resources/audio/g2_silver_moon_gtrs_live_rx1.wav
+      C5: configs/resources/audio/g3_silver_moon_gtr_od_anchor_standard_low_3500hz.wav
+  - type: finish
+    name: Thank you
+    content: Thank you for attending!
+    showResults: true
+    writeResults: true
+    questionnaire:
+      - type: number
+        label: Age
+        name: age
+        min: 0
+        max: 100
+        default: 30
+      - type: likert
+        name: role
+        label: Role
+        response:
+          - value: engineer
+            label: Trained / Professional Audio Engineer
+          - value: student
+            label: Audio Engineering Student
+          - value: nota
+            label: Neither of the above
