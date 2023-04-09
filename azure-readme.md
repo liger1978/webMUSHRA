@@ -10,10 +10,10 @@
 ## Create Azure resources
 
 1. Sign-up for Azure pay-as-you-go.
-2. Login to [Azute portal](https://portal.azure.com/#home).
-3. Create webmushra Azure resource group.
-4. Create webmushradeep Azure container registry.
-5. Create webmushra Azure storage account.
+2. Login to [Azure portal](https://portal.azure.com/#home).
+3. Create `webmushra` Azure resource group.
+4. Create `webmushradeep` Azure container registry.
+5. Create `webmushra` Azure storage account.
 6. Create `certs` fileshare in storage account.
 7. Create `results` fileshare in storage account.
 
