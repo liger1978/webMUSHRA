@@ -1,4 +1,4 @@
 FROM php:7.0-fpm
-RUN mkdir -p /app/service
-COPY ./service/write.php /app/service/write.php
+RUN mkdir -p /var/www/html/service
+COPY ./service/write.php /var/www/html/service/write.php
 WORKDIR /app
