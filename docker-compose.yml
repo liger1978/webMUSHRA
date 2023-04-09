@@ -1,46 +1,11 @@
 version: '2'
 services:
   webmushra:
-    domainname: webmushra
-    image: webmushradeep.azurecr.io/webmushra:latest
     build:
       context: .
       dockerfile: Dockerfile
     volumes:
-      - results:/var/www/html/results
+      - ./results:/var/www/html/results
+      - ./configs:/var/www/html/configs
     ports:
-      - "80:80"
-    deploy:
-      resources:
-        reservations:
-          cpus: '1'
-          memory: 2G
-        limits:
-          cpus: '1'
-          memory: 2G
-  proxy:
-    domainname: webmushra
-    image: webmushradeep.azurecr.io/caddy:latest
-    volumes:
-      - certs:/data
-    ports:
-      - "443:443"
-    deploy:
-      resources:
-        reservations:
-          cpus: '1'
-          memory: 2G
-        limits:
-          cpus: '1'
-          memory: 2G
-volumes:
-  results:
-    driver: azure_file
-    driver_opts:
-      share_name: results
-      storage_account_name: webmushra
-  certs:
-    driver: azure_file
-    driver_opts:
-      share_name: certs
-      storage_account_name: webmushra
+      - "8000:80"

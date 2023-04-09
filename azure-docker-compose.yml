@@ -1,0 +1,25 @@
+version: '2'
+services:
+  php:
+    domainname: webmushra
+    container_name: php
+    image: webmushradeep.azurecr.io/php:latest
+    volumes: [results:/var/www/html/results]
+    ports: ["9000:9000"]
+  caddy:
+    domainname: webmushra
+    image: webmushradeep.azurecr.io/caddy:latest
+    depends_on: [php]
+    volumes: [certs:/data]
+    ports: ["443:443"]
+volumes:
+  results:
+    driver: azure_file
+    driver_opts:
+      share_name: results
+      storage_account_name: webmushra
+  certs:
+    driver: azure_file
+    driver_opts:
+      share_name: certs
+      storage_account_name: webmushra

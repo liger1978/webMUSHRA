@@ -3,6 +3,7 @@
 }
 
 https://webmushra.uksouth.azurecontainer.io {
-	php_fastcgi localhost:80
-	reverse_proxy localhost:80
+	php_fastcgi php:9000
+	root * /var/www/html
+	file_server
 }
