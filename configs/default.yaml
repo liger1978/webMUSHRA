@@ -11,9 +11,7 @@ pages:
   - type: generic
     id: first_page
     name: webMUSHRA
-    content: >-
-      Deep Neural Network based Music Source Separation -
-      Multiple Stimuli with Hidden Reference and Anchor Test
+    content: Deep Neural Network based Music Source Separation - Listening Test
   - type: consent
     id: consent_page
     name: Consent
@@ -24,11 +22,12 @@ pages:
       </p>
       <p>
         To complete this test, you will be asked to compare a selection of audio
-        samples against a reference audio sample.
+        samples against a reference audio sample. The test should take between 5
+        to 10 minutes in total.
       </p>
       <p>
-        For research purposes we want to store the answers you give to the
-        during the test.
+        For research purposes we want to store the answers you give during the
+        test.
       </p>
         All data will be stored anonymously behind a password. Any personal
         information will be destroyed after research has been been completed and
@@ -46,8 +45,10 @@ pages:
         the instructions to proceed with the training session.
       </p>
       <p>
-        In a MUSHRA listening test you are asked to rate the Basic Audio
-        Quality (BAQ) of each condition.<br/>
+        In this test you are asked to rate the Basic Audio Quality (BAQ) of each
+        condition.
+      </p>
+      <p>
         Basic Audio Quality is a single and global attribute that is used to
         judge any and all detected differences between the reference and the
         condition.
@@ -56,9 +57,20 @@ pages:
         When you press play, you will hear an audio sample of a sine wave.
       </p>
       <p>
+        For best results, play the reference audio first and then each
+        subsequent test audio sample.
+      </p>
+      <p>
+        You can switch between each audio sample at any time.
+      </p>
+      <p>
+        You can also use the sliders to adjust the start and end points of the
+        audio sample loop to find identical looping sections.
+      </p>
+      <p>
         Please listen and rate each piece of test audio (conditions) from 0 to
         100, with 100 being judged to be identical to the reference audio and 0
-        being different.
+        being completely different.
       </p>
       <p>
         Click next once you have rated each audio sample.
@@ -66,8 +78,6 @@ pages:
     showWaveform: true
     enableLooping: true
     reference: configs/resources/audio/stereo_mono_ref.flac
-    createAnchor35: true
-    createAnchor70: true
     stimuli:
       C1: configs/resources/audio/stereo_mono_c1.flac
       C2: configs/resources/audio/stereo_mono_c2.flac
@@ -79,11 +89,21 @@ pages:
       <p>
         Please listen and rate each piece of test audio (conditions) from 0 to
         100, with 100 being judged to be identical to the reference audio and
-        0 being different.
+        0 being completely different.
       </p>
       <p>
-        If necessary, use the sliders to adjust the start and end points of the
-        audio sample loop.
+        For best results, play the reference audio first and then each
+        subsequent test audio sample.
+      </p>
+      <p>
+        You can switch between each audio sample at any time.
+      </p>
+      <p>
+        You can also use the sliders to adjust the start and end points of the
+        audio sample loop to find identical looping sections.
+      </p>
+      <p>
+        You are being asked to rate by audio quality not musical content.
       </p>
       <p>
         Click next once you have rated each audio sample.
@@ -93,10 +113,11 @@ pages:
     reference: configs/resources/audio/a1_folk_solo_ref_drum.flac
     stimuli:
       C1: configs/resources/audio/a2_folk_mix_drums_ripx.flac
-      C2: configs/resources/audio/a2_folk_mix_drums_demucs4_ht_drums.flac
-      C3: configs/resources/audio/a2_folk_mix_drums_rx.flac
-      C4: configs/resources/audio/a2_folk_mix_drums_lalalai.flac
-      C5: configs/resources/audio/a3_folk_solo_ref_drums_anchor_standard_low_3500hz.flac
+      C2: configs/resources/audio/a1_folk_solo_ref_drum.flac
+      C3: configs/resources/audio/a2_folk_mix_drums_demucs4_ht_drums.flac
+      C4: configs/resources/audio/a2_folk_mix_drums_rx.flac
+      C5: configs/resources/audio/a2_folk_mix_drums_lalalai.flac
+      C6: configs/resources/audio/a3_folk_solo_ref_drums_anchor_standard_low_3500hz.flac
   - type: mushra
     id: test_b
     name: Audio Stimuli Testing B
@@ -104,11 +125,21 @@ pages:
       <p>
         Please listen and rate each piece of test audio (conditions) from 0 to
         100, with 100 being judged to be identical to the reference audio and
-        0 being different.
+        0 being completely different.
       </p>
       <p>
-        If necessary, use the sliders to adjust the start and end points of the
-        audio sample loop.
+        For best results, play the reference audio first and then each
+        subsequent test audio sample.
+      </p>
+      <p>
+        You can switch between each audio sample at any time.
+      </p>
+      <p>
+        You can also use the sliders to adjust the start and end points of the
+        audio sample loop to find identical looping sections.
+      </p>
+      <p>
+        You are being asked to rate by audio quality not musical content.
       </p>
       <p>
         Click next once you have rated each audio sample.
@@ -120,8 +151,9 @@ pages:
       C1: configs/resources/audio/b3_folk_solo_ref_gtr_anchor_standard_low_3500hz.flac
       C2: configs/resources/audio/b2_folk_mix_gtr_demucs4_ht_other.flac
       C3: configs/resources/audio/b2_folk_mix_gtr_ripx.flac
-      C4: configs/resources/audio/b2_folk_mix_gtr_lalalai.flac
-      C5: configs/resources/audio/b2_folk_mix_gtr_rx.flac
+      C4: configs/resources/audio/b1_folk_solo_ref_gtr.flac
+      C5: configs/resources/audio/b2_folk_mix_gtr_lalalai.flac
+      C6: configs/resources/audio/b2_folk_mix_gtr_rx.flac
   - type: mushra
     id: test_c
     name: Audio Stimuli Testing C
@@ -129,11 +161,21 @@ pages:
       <p>
         Please listen and rate each piece of test audio (conditions) from 0 to
         100, with 100 being judged to be identical to the reference audio and
-        0 being different.
+        0 being completely different.
       </p>
       <p>
-        If necessary, use the sliders to adjust the start and end points of the
-        audio sample loop.
+        For best results, play the reference audio first and then each
+        subsequent test audio sample.
+      </p>
+      <p>
+        You can switch between each audio sample at any time.
+      </p>
+      <p>
+        You can also use the sliders to adjust the start and end points of the
+        audio sample loop to find identical looping sections.
+      </p>
+      <p>
+        You are being asked to rate by audio quality not musical content.
       </p>
       <p>
         Click next once you have rated each audio sample.
@@ -142,11 +184,12 @@ pages:
     enableLooping: true
     reference: configs/resources/audio/c1_rock_solo_ref_drums.flac
     stimuli:
-      C1: configs/resources/audio/c2_rock_mix_drums_rx.flac
-      C2: configs/resources/audio/c3_rock_solo_ref_drums_anchor_standard_low_3500hz.flac
-      C3: configs/resources/audio/c2_rock_mix_drums_ripx.flac
-      C4: configs/resources/audio/c2_rock_mix_drums_lalalai.flac
-      C5: configs/resources/audio/c2_rock_mix_drums_demucs4_ht_drums.flac
+      C1: configs/resources/audio/c1_rock_solo_ref_drums.flac
+      C2: configs/resources/audio/c2_rock_mix_drums_rx.flac
+      C3: configs/resources/audio/c3_rock_solo_ref_drums_anchor_standard_low_3500hz.flac
+      C4: configs/resources/audio/c2_rock_mix_drums_ripx.flac
+      C5: configs/resources/audio/c2_rock_mix_drums_lalalai.flac
+      C6: configs/resources/audio/c2_rock_mix_drums_demucs4_ht_drums.flac
   - type: mushra
     id: test_d
     name: Audio Stimuli Testing D
@@ -154,11 +197,21 @@ pages:
       <p>
         Please listen and rate each piece of test audio (conditions) from 0 to
         100, with 100 being judged to be identical to the reference audio and
-        0 being different.
+        0 being completely different.
       </p>
       <p>
-        If necessary, use the sliders to adjust the start and end points of the
-        audio sample loop.
+        For best results, play the reference audio first and then each
+        subsequent test audio sample.
+      </p>
+      <p>
+        You can switch between each audio sample at any time.
+      </p>
+      <p>
+        You can also use the sliders to adjust the start and end points of the
+        audio sample loop to find identical looping sections.
+      </p>
+      <p>
+        You are being asked to rate by audio quality not musical content.
       </p>
       <p>
         Click next once you have rated each audio sample.
@@ -168,10 +221,11 @@ pages:
     reference: configs/resources/audio/d1_rock_solo_ref_gtr.flac
     stimuli:
       C1: configs/resources/audio/d2_rock_mix_gtr_demucs4_ht_other.flac
-      C2: configs/resources/audio/d2_rock_mix_gtr_rx.flac
-      C3: configs/resources/audio/d2_rock_mix_gtr_ripx.flac
-      C4: configs/resources/audio/d2_rock_mix_gtr_lalalai.flac
-      C5: configs/resources/audio/d3_rock_solo_ref_gtr_anchor_standard_low_3500hz.flac
+      C2: configs/resources/audio/d1_rock_solo_ref_gtr.flac
+      C3: configs/resources/audio/d2_rock_mix_gtr_rx.flac
+      C4: configs/resources/audio/d2_rock_mix_gtr_ripx.flac
+      C5: configs/resources/audio/d2_rock_mix_gtr_lalalai.flac
+      C6: configs/resources/audio/d3_rock_solo_ref_gtr_anchor_standard_low_3500hz.flac
   - type: mushra
     id: test_e
     name: Audio Stimuli Testing E
@@ -179,11 +233,21 @@ pages:
       <p>
         Please listen and rate each piece of test audio (conditions) from 0 to
         100, with 100 being judged to be identical to the reference audio and
-        0 being different.
+        0 being completely different.
       </p>
       <p>
-        If necessary, use the sliders to adjust the start and end points of the
-        audio sample loop.
+        For best results, play the reference audio first and then each
+        subsequent test audio sample.
+      </p>
+      <p>
+        You can switch between each audio sample at any time.
+      </p>
+      <p>
+        You can also use the sliders to adjust the start and end points of the
+        audio sample loop to find identical looping sections.
+      </p>
+      <p>
+        You are being asked to rate by audio quality not musical content.
       </p>
       <p>
         Click next once you have rated each audio sample.
@@ -197,6 +261,7 @@ pages:
       C3: configs/resources/audio/e2_silver_moon_vox_live_lalalai.flac
       C4: configs/resources/audio/e2_silver_moon_vox_live_demucs4_ht_other.flac
       C5: configs/resources/audio/e2_silver_moon_vox_live_ripx.flac
+      C6: configs/resources/audio/e1_silver_moon_vox_od_solo_ref.flac
   - type: mushra
     id: test_f
     name: Audio Stimuli Testing F
@@ -204,11 +269,21 @@ pages:
       <p>
         Please listen and rate each piece of test audio (conditions) from 0 to
         100, with 100 being judged to be identical to the reference audio and
-        0 being different.
+        0 being completely different.
       </p>
       <p>
-        If necessary, use the sliders to adjust the start and end points of the
-        audio sample loop.
+        For best results, play the reference audio first and then each
+        subsequent test audio sample.
+      </p>
+      <p>
+        You can switch between each audio sample at any time.
+      </p>
+      <p>
+        You can also use the sliders to adjust the start and end points of the
+        audio sample loop to find identical looping sections.
+      </p>
+      <p>
+        You are being asked to rate by audio quality not musical content.
       </p>
       <p>
         Click next once you have rated each audio sample.
@@ -218,10 +293,11 @@ pages:
     reference: configs/resources/audio/f1_silver_moon_bass_od_solo_ref.flac
     stimuli:
       C1: configs/resources/audio/f2_silver_moon_bass_live_demucs4_ht_bass.flac
-      C2: configs/resources/audio/f2_silver_moon_bass_live_rx.flac
-      C3: configs/resources/audio/f3_silver_moon_bass_od_anchor_3500hz.flac
-      C4: configs/resources/audio/f2_silver_moon_bass_live_lalalai.flac
-      C5: configs/resources/audio/f2_silver_moon_bass_live_ripx.flac
+      C2: configs/resources/audio/f1_silver_moon_bass_od_solo_ref.flac
+      C3: configs/resources/audio/f2_silver_moon_bass_live_rx.flac
+      C4: configs/resources/audio/f3_silver_moon_bass_od_anchor_3500hz.flac
+      C5: configs/resources/audio/f2_silver_moon_bass_live_lalalai.flac
+      C6: configs/resources/audio/f2_silver_moon_bass_live_ripx.flac
   - type: mushra
     id: test_g
     name: Audio Stimuli Testing G
@@ -229,11 +305,21 @@ pages:
       <p>
         Please listen and rate each piece of test audio (conditions) from 0 to
         100, with 100 being judged to be identical to the reference audio and
-        0 being different.
+        0 being completely different.
       </p>
       <p>
-        If necessary, use the sliders to adjust the start and end points of the
-        audio sample loop.
+        For best results, play the reference audio first and then each
+        subsequent test audio sample.
+      </p>
+      <p>
+        You can switch between each audio sample at any time.
+      </p>
+      <p>
+        You can also use the sliders to adjust the start and end points of the
+        audio sample loop to find identical looping sections.
+      </p>
+      <p>
+        You are being asked to rate by audio quality not musical content.
       </p>
       <p>
         Click next once you have rated each audio sample.
@@ -244,9 +330,10 @@ pages:
     stimuli:
       C1: configs/resources/audio/g2_silver_moon_gtrs_live_ripx.flac
       C2: configs/resources/audio/g3_silver_moon_gtr_od_anchor_standard_low_3500hz.flac
-      C3: configs/resources/audio/g2_silver_moon_gtrs_live_lalalai.flac
-      C4: configs/resources/audio/g2_silver_moon_gtrs_live_demucs4_ht_other.flac
-      C5: configs/resources/audio/g2_silver_moon_gtrs_live_rx1.flac
+      C3: configs/resources/audio/g1_silver_moon_gtr_od_solo_ref.flac
+      C4: configs/resources/audio/g2_silver_moon_gtrs_live_lalalai.flac
+      C5: configs/resources/audio/g2_silver_moon_gtrs_live_demucs4_ht_other.flac
+      C6: configs/resources/audio/g2_silver_moon_gtrs_live_rx1.flac
   - type: mushra
     id: test_h
     name: Audio Stimuli Testing H
@@ -254,11 +341,21 @@ pages:
       <p>
         Please listen and rate each piece of test audio (conditions) from 0 to
         100, with 100 being judged to be identical to the reference audio and
-        0 being different.
+        0 being completely different.
       </p>
       <p>
-        If necessary, use the sliders to adjust the start and end points of the
-        audio sample loop.
+        For best results, play the reference audio first and then each
+        subsequent test audio sample.
+      </p>
+      <p>
+        You can switch between each audio sample at any time.
+      </p>
+      <p>
+        You can also use the sliders to adjust the start and end points of the
+        audio sample loop to find identical looping sections.
+      </p>
+      <p>
+        You are being asked to rate by audio quality not musical content.
       </p>
       <p>
         Click next once you have rated each audio sample.
@@ -270,9 +367,10 @@ pages:
       C1: configs/resources/audio/h2_folk1_mix_rx.flac
       C2: configs/resources/audio/h2_folk1_mix_raw.flac
       C3: configs/resources/audio/h2_folk1_mix_demucs4-ht.flac
-      C4: configs/resources/audio/h3_folk1_mix_anchor_standard_low_3500hz.flac
-      C5: configs/resources/audio/h2_folk1_mix_lalalai.flac
-      C6: configs/resources/audio/h2_folk1_mix_ripx.flac
+      C4: configs/resources/audio/h1_folk1_mix_ref_isolated.flac
+      C5: configs/resources/audio/h3_folk1_mix_anchor_standard_low_3500hz.flac
+      C6: configs/resources/audio/h2_folk1_mix_lalalai.flac
+      C7: configs/resources/audio/h2_folk1_mix_ripx.flac
   - type: mushra
     id: test_i
     name: Audio Stimuli Testing I
@@ -280,11 +378,21 @@ pages:
       <p>
         Please listen and rate each piece of test audio (conditions) from 0 to
         100, with 100 being judged to be identical to the reference audio and
-        0 being different.
+        0 being completely different.
       </p>
       <p>
-        If necessary, use the sliders to adjust the start and end points of the
-        audio sample loop.
+        For best results, play the reference audio first and then each
+        subsequent test audio sample.
+      </p>
+      <p>
+        You can switch between each audio sample at any time.
+      </p>
+      <p>
+        You can also use the sliders to adjust the start and end points of the
+        audio sample loop to find identical looping sections.
+      </p>
+      <p>
+        You are being asked to rate by audio quality not musical content.
       </p>
       <p>
         Click next once you have rated each audio sample.
@@ -299,6 +407,7 @@ pages:
       C4: configs/resources/audio/i3_rock1_mix_anchor_standard_low_3500hz.flac
       C5: configs/resources/audio/i2_rock1_mix_rx.flac
       C6: configs/resources/audio/i2_rock1_mix_raw.flac
+      C7: configs/resources/audio/i1_rock1_mix_ref_isolated.flac
   - type: finish
     name: Thank you
     content: Thank you for attending!
@@ -310,7 +419,7 @@ pages:
         label: Age
         min: 0
         max: 100
-        default: 30
+        default: 0
       - type: likert
         name: role
         label: Role
