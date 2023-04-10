@@ -20,8 +20,19 @@ pages:
     mustConsent: true
     content: |-
       <p>
-        You are participating in a listening test. For this, we want to store
-        the answers you give to the following questions.
+        You are participating in a listening test.
+      </p>
+      <p>
+        To complete this test, you will be asked to compare a selection of audio
+        samples against a reference audio sample.
+      </p>
+      <p>
+        For research purposes we want to store the answers you give to the
+        during the test.
+      </p>
+        All data will be stored anonymously behind a password. Any personal
+        information will be destroyed after research has been been completed and
+        will adhere to The Data Protection Act 2018 (GDPR).
       </p>
       <p>
         Do you give consent for this?
@@ -31,9 +42,8 @@ pages:
     name: webMUSHRA Training Page
     content: |-
       <p>
-        This training shows how to use our user interface. Please perform the
-        instructions to proceed with the
-        training session.
+        This training page shows how to use our user interface. Please perform
+        the instructions to proceed with the training session.
       </p>
       <p>
         In a MUSHRA listening test you are asked to rate the Basic Audio
@@ -43,22 +53,25 @@ pages:
         condition.
       </p>
       <p>
+        When you press play, you will hear an audio sample of a sine wave.
+      </p>
+      <p>
         Please listen and rate each piece of test audio (conditions) from 0 to
-        100, with 100 being judged to be identical to the reference audio and
-        0 being different.
+        100, with 100 being judged to be identical to the reference audio and 0
+        being different.
       </p>
       <p>
         Click next once you have rated each audio sample.
       </p>
     showWaveform: true
     enableLooping: true
-    reference: configs/resources/audio/mono_ref.flac
+    reference: configs/resources/audio/stereo_mono_ref.flac
     createAnchor35: true
     createAnchor70: true
     stimuli:
-      C1: configs/resources/audio/mono_c1.flac
-      C2: configs/resources/audio/mono_c2.flac
-      C3: configs/resources/audio/mono_c3.flac
+      C1: configs/resources/audio/stereo_mono_c1.flac
+      C2: configs/resources/audio/stereo_mono_c2.flac
+      C3: configs/resources/audio/stereo_mono_c3.flac
   - type: mushra
     id: test_a
     name: Audio Stimuli Testing A
@@ -69,16 +82,20 @@ pages:
         0 being different.
       </p>
       <p>
+        If necessary, use the sliders to adjust the start and end points of the
+        audio sample loop.
+      </p>
+      <p>
         Click next once you have rated each audio sample.
       </p>
     showWaveform: true
     enableLooping: true
     reference: configs/resources/audio/a1_folk_solo_ref_drum.flac
     stimuli:
-      C1: configs/resources/audio/a2_folk_mix_drums_demucs4_ht_drums.flac
-      C2: configs/resources/audio/a2_folk_mix_drums_lalalai.flac
-      C3: configs/resources/audio/a2_folk_mix_drums_ripx.flac
-      C4: configs/resources/audio/a2_folk_mix_drums_rx.flac
+      C1: configs/resources/audio/a2_folk_mix_drums_ripx.flac
+      C2: configs/resources/audio/a2_folk_mix_drums_demucs4_ht_drums.flac
+      C3: configs/resources/audio/a2_folk_mix_drums_rx.flac
+      C4: configs/resources/audio/a2_folk_mix_drums_lalalai.flac
       C5: configs/resources/audio/a3_folk_solo_ref_drums_anchor_standard_low_3500hz.flac
   - type: mushra
     id: test_b
@@ -90,17 +107,21 @@ pages:
         0 being different.
       </p>
       <p>
+        If necessary, use the sliders to adjust the start and end points of the
+        audio sample loop.
+      </p>
+      <p>
         Click next once you have rated each audio sample.
       </p>
     showWaveform: true
     enableLooping: true
     reference: configs/resources/audio/b1_folk_solo_ref_gtr.flac
     stimuli:
-      C1: configs/resources/audio/b2_folk_mix_gtr_demucs4_ht_other.flac
-      C2: configs/resources/audio/b2_folk_mix_gtr_lalalai.flac
+      C1: configs/resources/audio/b3_folk_solo_ref_gtr_anchor_standard_low_3500hz.flac
+      C2: configs/resources/audio/b2_folk_mix_gtr_demucs4_ht_other.flac
       C3: configs/resources/audio/b2_folk_mix_gtr_ripx.flac
-      C4: configs/resources/audio/b2_folk_mix_gtr_rx.flac
-      C5: configs/resources/audio/b3_folk_solo_ref_gtr_anchor_standard_low_3500hz.flac
+      C4: configs/resources/audio/b2_folk_mix_gtr_lalalai.flac
+      C5: configs/resources/audio/b2_folk_mix_gtr_rx.flac
   - type: mushra
     id: test_c
     name: Audio Stimuli Testing C
@@ -111,17 +132,21 @@ pages:
         0 being different.
       </p>
       <p>
+        If necessary, use the sliders to adjust the start and end points of the
+        audio sample loop.
+      </p>
+      <p>
         Click next once you have rated each audio sample.
       </p>
     showWaveform: true
     enableLooping: true
     reference: configs/resources/audio/c1_rock_solo_ref_drums.flac
     stimuli:
-      C1: configs/resources/audio/c2_rock_mix_drums_demucs4_ht_drums.flac
-      C2: configs/resources/audio/c2_rock_mix_drums_lalalai.flac
+      C1: configs/resources/audio/c2_rock_mix_drums_rx.flac
+      C2: configs/resources/audio/c3_rock_solo_ref_drums_anchor_standard_low_3500hz.flac
       C3: configs/resources/audio/c2_rock_mix_drums_ripx.flac
-      C4: configs/resources/audio/c2_rock_mix_drums_rx.flac
-      C5: configs/resources/audio/c3_rock_solo_ref_drums_anchor_standard_low_3500hz.flac
+      C4: configs/resources/audio/c2_rock_mix_drums_lalalai.flac
+      C5: configs/resources/audio/c2_rock_mix_drums_demucs4_ht_drums.flac
   - type: mushra
     id: test_d
     name: Audio Stimuli Testing D
@@ -132,6 +157,10 @@ pages:
         0 being different.
       </p>
       <p>
+        If necessary, use the sliders to adjust the start and end points of the
+        audio sample loop.
+      </p>
+      <p>
         Click next once you have rated each audio sample.
       </p>
     showWaveform: true
@@ -139,9 +168,9 @@ pages:
     reference: configs/resources/audio/d1_rock_solo_ref_gtr.flac
     stimuli:
       C1: configs/resources/audio/d2_rock_mix_gtr_demucs4_ht_other.flac
-      C2: configs/resources/audio/d2_rock_mix_gtr_lalalai.flac
+      C2: configs/resources/audio/d2_rock_mix_gtr_rx.flac
       C3: configs/resources/audio/d2_rock_mix_gtr_ripx.flac
-      C4: configs/resources/audio/d2_rock_mix_gtr_rx.flac
+      C4: configs/resources/audio/d2_rock_mix_gtr_lalalai.flac
       C5: configs/resources/audio/d3_rock_solo_ref_gtr_anchor_standard_low_3500hz.flac
   - type: mushra
     id: test_e
@@ -153,17 +182,21 @@ pages:
         0 being different.
       </p>
       <p>
+        If necessary, use the sliders to adjust the start and end points of the
+        audio sample loop.
+      </p>
+      <p>
         Click next once you have rated each audio sample.
       </p>
     showWaveform: true
     enableLooping: true
     reference: configs/resources/audio/e1_silver_moon_vox_od_solo_ref.flac
     stimuli:
-      C1: configs/resources/audio/e2_silver_moon_vox_live_demucs4_ht_other.flac
-      C2: configs/resources/audio/e2_silver_moon_vox_live_lalalai.flac
-      C3: configs/resources/audio/e2_silver_moon_vox_live_ripx.flac
-      C4: configs/resources/audio/e2_silver_moon_vox_live_rx.flac
-      C5: configs/resources/audio/e3_silver_moon_vox_od_anchor_standard_low_3500hz.flac
+      C1: configs/resources/audio/e2_silver_moon_vox_live_rx.flac
+      C2: configs/resources/audio/e3_silver_moon_vox_od_anchor_standard_low_3500hz.flac
+      C3: configs/resources/audio/e2_silver_moon_vox_live_lalalai.flac
+      C4: configs/resources/audio/e2_silver_moon_vox_live_demucs4_ht_other.flac
+      C5: configs/resources/audio/e2_silver_moon_vox_live_ripx.flac
   - type: mushra
     id: test_f
     name: Audio Stimuli Testing F
@@ -174,6 +207,10 @@ pages:
         0 being different.
       </p>
       <p>
+        If necessary, use the sliders to adjust the start and end points of the
+        audio sample loop.
+      </p>
+      <p>
         Click next once you have rated each audio sample.
       </p>
     showWaveform: true
@@ -181,10 +218,10 @@ pages:
     reference: configs/resources/audio/f1_silver_moon_bass_od_solo_ref.flac
     stimuli:
       C1: configs/resources/audio/f2_silver_moon_bass_live_demucs4_ht_bass.flac
-      C2: configs/resources/audio/f2_silver_moon_bass_live_lalalai.flac
-      C3: configs/resources/audio/f2_silver_moon_bass_live_ripx.flac
-      C4: configs/resources/audio/f2_silver_moon_bass_live_rx.flac
-      C5: configs/resources/audio/f3_silver_moon_bass_od_anchor_3500hz.flac
+      C2: configs/resources/audio/f2_silver_moon_bass_live_rx.flac
+      C3: configs/resources/audio/f3_silver_moon_bass_od_anchor_3500hz.flac
+      C4: configs/resources/audio/f2_silver_moon_bass_live_lalalai.flac
+      C5: configs/resources/audio/f2_silver_moon_bass_live_ripx.flac
   - type: mushra
     id: test_g
     name: Audio Stimuli Testing G
@@ -195,17 +232,73 @@ pages:
         0 being different.
       </p>
       <p>
+        If necessary, use the sliders to adjust the start and end points of the
+        audio sample loop.
+      </p>
+      <p>
         Click next once you have rated each audio sample.
       </p>
     showWaveform: true
     enableLooping: true
     reference: configs/resources/audio/g1_silver_moon_gtr_od_solo_ref.flac
     stimuli:
-      C1: configs/resources/audio/g2_silver_moon_gtrs_live_demucs4_ht_other.flac
-      C2: configs/resources/audio/g2_silver_moon_gtrs_live_lalalai.flac
-      C3: configs/resources/audio/g2_silver_moon_gtrs_live_ripx.flac
-      C4: configs/resources/audio/g2_silver_moon_gtrs_live_rx1.flac
-      C5: configs/resources/audio/g3_silver_moon_gtr_od_anchor_standard_low_3500hz.flac
+      C1: configs/resources/audio/g2_silver_moon_gtrs_live_ripx.flac
+      C2: configs/resources/audio/g3_silver_moon_gtr_od_anchor_standard_low_3500hz.flac
+      C3: configs/resources/audio/g2_silver_moon_gtrs_live_lalalai.flac
+      C4: configs/resources/audio/g2_silver_moon_gtrs_live_demucs4_ht_other.flac
+      C5: configs/resources/audio/g2_silver_moon_gtrs_live_rx1.flac
+  - type: mushra
+    id: test_h
+    name: Audio Stimuli Testing H
+    content: |-
+      <p>
+        Please listen and rate each piece of test audio (conditions) from 0 to
+        100, with 100 being judged to be identical to the reference audio and
+        0 being different.
+      </p>
+      <p>
+        If necessary, use the sliders to adjust the start and end points of the
+        audio sample loop.
+      </p>
+      <p>
+        Click next once you have rated each audio sample.
+      </p>
+    showWaveform: true
+    enableLooping: true
+    reference: configs/resources/audio/h1_folk1_mix_ref_isolated.flac
+    stimuli:
+      C1: configs/resources/audio/h2_folk1_mix_rx.flac
+      C2: configs/resources/audio/h2_folk1_mix_raw.flac
+      C3: configs/resources/audio/h2_folk1_mix_demucs4-ht.flac
+      C4: configs/resources/audio/h3_folk1_mix_anchor_standard_low_3500hz.flac
+      C5: configs/resources/audio/h2_folk1_mix_lalalai.flac
+      C6: configs/resources/audio/h2_folk1_mix_ripx.flac
+  - type: mushra
+    id: test_i
+    name: Audio Stimuli Testing I
+    content: |-
+      <p>
+        Please listen and rate each piece of test audio (conditions) from 0 to
+        100, with 100 being judged to be identical to the reference audio and
+        0 being different.
+      </p>
+      <p>
+        If necessary, use the sliders to adjust the start and end points of the
+        audio sample loop.
+      </p>
+      <p>
+        Click next once you have rated each audio sample.
+      </p>
+    showWaveform: true
+    enableLooping: true
+    reference: configs/resources/audio/i1_rock1_mix_ref_isolated.flac
+    stimuli:
+      C1: configs/resources/audio/i2_rock1_mix_lalalai.flac
+      C2: configs/resources/audio/i2_rock1_mix_ripx.flac
+      C3: configs/resources/audio/i2_rock1_mix_demucs4-ht.flac
+      C4: configs/resources/audio/i3_rock1_mix_anchor_standard_low_3500hz.flac
+      C5: configs/resources/audio/i2_rock1_mix_rx.flac
+      C6: configs/resources/audio/i2_rock1_mix_raw.flac
   - type: finish
     name: Thank you
     content: Thank you for attending!
@@ -213,8 +306,8 @@ pages:
     writeResults: true
     questionnaire:
       - type: number
-        label: Age
         name: age
+        label: Age
         min: 0
         max: 100
         default: 30
@@ -227,4 +320,24 @@ pages:
           - value: student
             label: Audio Engineering Student
           - value: nota
-            label: Neither of the above
+            label: None of the above
+      - type: likert
+        name: equipment
+        label: What did you use during the test to listen?
+        response:
+          - value: studio speakers
+            label: High quality studio speakers
+          - value: hifi speakers
+            label: Home hi-fi speakers (bookshelf or floorstanding)
+          - value: bluetooth speakers
+            label: Portable bluetooth speakers
+          - value: over-ear headphones
+            label: Over-ear Headphones
+          - value: in-ear earphones
+            label: In-ear earphones
+          - value: nota
+            label: None of the above (fill-in below)
+      - type: text
+        name: equipment_other
+        label: Other equipment (if none of the above)
+        optional: true
