@@ -73,7 +73,7 @@ pages:
         being completely different.
       </p>
       <p>
-        Click next once you have rated each audio sample.
+        Click next once you have rated every audio sample.
       </p>
     showWaveform: true
     enableLooping: true
@@ -106,18 +106,17 @@ pages:
         You are being asked to rate by audio quality not musical content.
       </p>
       <p>
-        Click next once you have rated each audio sample.
+        Click next once you have rated every audio sample.
       </p>
     showWaveform: true
     enableLooping: true
     reference: configs/resources/audio/a1_folk_solo_ref_drum.flac
     stimuli:
       C1: configs/resources/audio/a2_folk_mix_drums_ripx.flac
-      C2: configs/resources/audio/a1_folk_solo_ref_drum.flac
-      C3: configs/resources/audio/a2_folk_mix_drums_demucs4_ht_drums.flac
-      C4: configs/resources/audio/a2_folk_mix_drums_rx.flac
-      C5: configs/resources/audio/a2_folk_mix_drums_lalalai.flac
-      C6: configs/resources/audio/a3_folk_solo_ref_drums_anchor_standard_low_3500hz.flac
+      C2: configs/resources/audio/a2_folk_mix_drums_demucs4_ht_drums.flac
+      C3: configs/resources/audio/a2_folk_mix_drums_rx.flac
+      C4: configs/resources/audio/a2_folk_mix_drums_lalalai.flac
+      C5: configs/resources/audio/a3_folk_solo_ref_drums_anchor_standard_low_3500hz.flac
   - type: mushra
     id: test_b
     name: Audio Stimuli Testing B
@@ -142,7 +141,7 @@ pages:
         You are being asked to rate by audio quality not musical content.
       </p>
       <p>
-        Click next once you have rated each audio sample.
+        Click next once you have rated every audio sample.
       </p>
     showWaveform: true
     enableLooping: true
@@ -151,9 +150,8 @@ pages:
       C1: configs/resources/audio/b3_folk_solo_ref_gtr_anchor_standard_low_3500hz.flac
       C2: configs/resources/audio/b2_folk_mix_gtr_demucs4_ht_other.flac
       C3: configs/resources/audio/b2_folk_mix_gtr_ripx.flac
-      C4: configs/resources/audio/b1_folk_solo_ref_gtr.flac
-      C5: configs/resources/audio/b2_folk_mix_gtr_lalalai.flac
-      C6: configs/resources/audio/b2_folk_mix_gtr_rx.flac
+      C4: configs/resources/audio/b2_folk_mix_gtr_lalalai.flac
+      C5: configs/resources/audio/b2_folk_mix_gtr_rx.flac
   - type: mushra
     id: test_c
     name: Audio Stimuli Testing C
@@ -178,18 +176,17 @@ pages:
         You are being asked to rate by audio quality not musical content.
       </p>
       <p>
-        Click next once you have rated each audio sample.
+        Click next once you have rated every audio sample.
       </p>
     showWaveform: true
     enableLooping: true
     reference: configs/resources/audio/c1_rock_solo_ref_drums.flac
     stimuli:
-      C1: configs/resources/audio/c1_rock_solo_ref_drums.flac
-      C2: configs/resources/audio/c2_rock_mix_drums_rx.flac
-      C3: configs/resources/audio/c3_rock_solo_ref_drums_anchor_standard_low_3500hz.flac
-      C4: configs/resources/audio/c2_rock_mix_drums_ripx.flac
-      C5: configs/resources/audio/c2_rock_mix_drums_lalalai.flac
-      C6: configs/resources/audio/c2_rock_mix_drums_demucs4_ht_drums.flac
+      C1: configs/resources/audio/c2_rock_mix_drums_rx.flac
+      C2: configs/resources/audio/c3_rock_solo_ref_drums_anchor_standard_low_3500hz.flac
+      C3: configs/resources/audio/c2_rock_mix_drums_ripx.flac
+      C4: configs/resources/audio/c2_rock_mix_drums_lalalai.flac
+      C5: configs/resources/audio/c2_rock_mix_drums_demucs4_ht_drums.flac
   - type: mushra
     id: test_d
     name: Audio Stimuli Testing D
@@ -214,18 +211,17 @@ pages:
         You are being asked to rate by audio quality not musical content.
       </p>
       <p>
-        Click next once you have rated each audio sample.
+        Click next once you have rated every audio sample.
       </p>
     showWaveform: true
     enableLooping: true
     reference: configs/resources/audio/d1_rock_solo_ref_gtr.flac
     stimuli:
       C1: configs/resources/audio/d2_rock_mix_gtr_demucs4_ht_other.flac
-      C2: configs/resources/audio/d1_rock_solo_ref_gtr.flac
-      C3: configs/resources/audio/d2_rock_mix_gtr_rx.flac
-      C4: configs/resources/audio/d2_rock_mix_gtr_ripx.flac
-      C5: configs/resources/audio/d2_rock_mix_gtr_lalalai.flac
-      C6: configs/resources/audio/d3_rock_solo_ref_gtr_anchor_standard_low_3500hz.flac
+      C2: configs/resources/audio/d2_rock_mix_gtr_rx.flac
+      C3: configs/resources/audio/d2_rock_mix_gtr_ripx.flac
+      C4: configs/resources/audio/d2_rock_mix_gtr_lalalai.flac
+      C5: configs/resources/audio/d3_rock_solo_ref_gtr_anchor_standard_low_3500hz.flac
   - type: mushra
     id: test_e
     name: Audio Stimuli Testing E
@@ -250,7 +246,7 @@ pages:
         You are being asked to rate by audio quality not musical content.
       </p>
       <p>
-        Click next once you have rated each audio sample.
+        Click next once you have rated every audio sample.
       </p>
     showWaveform: true
     enableLooping: true
@@ -261,7 +257,6 @@ pages:
       C3: configs/resources/audio/e2_silver_moon_vox_live_lalalai.flac
       C4: configs/resources/audio/e2_silver_moon_vox_live_demucs4_ht_other.flac
       C5: configs/resources/audio/e2_silver_moon_vox_live_ripx.flac
-      C6: configs/resources/audio/e1_silver_moon_vox_od_solo_ref.flac
   - type: mushra
     id: test_f
     name: Audio Stimuli Testing F
@@ -286,18 +281,17 @@ pages:
         You are being asked to rate by audio quality not musical content.
       </p>
       <p>
-        Click next once you have rated each audio sample.
+        Click next once you have rated every audio sample.
       </p>
     showWaveform: true
     enableLooping: true
     reference: configs/resources/audio/f1_silver_moon_bass_od_solo_ref.flac
     stimuli:
       C1: configs/resources/audio/f2_silver_moon_bass_live_demucs4_ht_bass.flac
-      C2: configs/resources/audio/f1_silver_moon_bass_od_solo_ref.flac
-      C3: configs/resources/audio/f2_silver_moon_bass_live_rx.flac
-      C4: configs/resources/audio/f3_silver_moon_bass_od_anchor_3500hz.flac
-      C5: configs/resources/audio/f2_silver_moon_bass_live_lalalai.flac
-      C6: configs/resources/audio/f2_silver_moon_bass_live_ripx.flac
+      C2: configs/resources/audio/f2_silver_moon_bass_live_rx.flac
+      C3: configs/resources/audio/f3_silver_moon_bass_od_anchor_3500hz.flac
+      C4: configs/resources/audio/f2_silver_moon_bass_live_lalalai.flac
+      C5: configs/resources/audio/f2_silver_moon_bass_live_ripx.flac
   - type: mushra
     id: test_g
     name: Audio Stimuli Testing G
@@ -322,7 +316,7 @@ pages:
         You are being asked to rate by audio quality not musical content.
       </p>
       <p>
-        Click next once you have rated each audio sample.
+        Click next once you have rated every audio sample.
       </p>
     showWaveform: true
     enableLooping: true
@@ -330,10 +324,9 @@ pages:
     stimuli:
       C1: configs/resources/audio/g2_silver_moon_gtrs_live_ripx.flac
       C2: configs/resources/audio/g3_silver_moon_gtr_od_anchor_standard_low_3500hz.flac
-      C3: configs/resources/audio/g1_silver_moon_gtr_od_solo_ref.flac
-      C4: configs/resources/audio/g2_silver_moon_gtrs_live_lalalai.flac
-      C5: configs/resources/audio/g2_silver_moon_gtrs_live_demucs4_ht_other.flac
-      C6: configs/resources/audio/g2_silver_moon_gtrs_live_rx1.flac
+      C3: configs/resources/audio/g2_silver_moon_gtrs_live_lalalai.flac
+      C4: configs/resources/audio/g2_silver_moon_gtrs_live_demucs4_ht_other.flac
+      C5: configs/resources/audio/g2_silver_moon_gtrs_live_rx1.flac
   - type: mushra
     id: test_h
     name: Audio Stimuli Testing H
@@ -358,7 +351,7 @@ pages:
         You are being asked to rate by audio quality not musical content.
       </p>
       <p>
-        Click next once you have rated each audio sample.
+        Click next once you have rated every audio sample.
       </p>
     showWaveform: true
     enableLooping: true
@@ -367,10 +360,9 @@ pages:
       C1: configs/resources/audio/h2_folk1_mix_rx.flac
       C2: configs/resources/audio/h2_folk1_mix_raw.flac
       C3: configs/resources/audio/h2_folk1_mix_demucs4-ht.flac
-      C4: configs/resources/audio/h1_folk1_mix_ref_isolated.flac
-      C5: configs/resources/audio/h3_folk1_mix_anchor_standard_low_3500hz.flac
-      C6: configs/resources/audio/h2_folk1_mix_lalalai.flac
-      C7: configs/resources/audio/h2_folk1_mix_ripx.flac
+      C4: configs/resources/audio/h3_folk1_mix_anchor_standard_low_3500hz.flac
+      C5: configs/resources/audio/h2_folk1_mix_lalalai.flac
+      C6: configs/resources/audio/h2_folk1_mix_ripx.flac
   - type: mushra
     id: test_i
     name: Audio Stimuli Testing I
@@ -395,7 +387,7 @@ pages:
         You are being asked to rate by audio quality not musical content.
       </p>
       <p>
-        Click next once you have rated each audio sample.
+        Click next once you have rated every audio sample.
       </p>
     showWaveform: true
     enableLooping: true
@@ -407,7 +399,6 @@ pages:
       C4: configs/resources/audio/i3_rock1_mix_anchor_standard_low_3500hz.flac
       C5: configs/resources/audio/i2_rock1_mix_rx.flac
       C6: configs/resources/audio/i2_rock1_mix_raw.flac
-      C7: configs/resources/audio/i1_rock1_mix_ref_isolated.flac
   - type: finish
     name: Thank you
     content: Thank you for attending!
